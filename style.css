@@ -228,3 +228,9 @@ form input , form textarea{
 .copyright i{
     color:#525252 ;
 }
+
+#msg{
+    color: #61b752;
+    margin-top: 20px;
+    display: block;
+}
