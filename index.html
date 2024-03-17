@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/5814b0cbe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Servives</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1>Hi, I'm <span>Rakhi</span> Choudhary</h1>
+
+            </div>
+        </div>
+    </div>
+ <!-- --- ---  ---------------------about------------------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Autem suscipit nam, quod sapiente impedit quibusdam qui nulla 
+                        architecto consequuntur assumenda consequatur odio at id unde odit! 
+                        Ipsa consequuntur itaque ut.</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links  " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                            <li>API Devlopment</li>
+                            <li>Flask</li>
+                            <li>Django</li>
+                            <li>MYSQL</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Python Developer Intern | RounderLabs.pvt.Ltd , Noida (oct 2023-present)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>2024 | MCA from IGNOU | Pursuing</li>
+                            <li>2023 | B.A from DU | 7.0 CGPA</li>
+                            <li>2020 | XII from CBSE | 70%</li>
+                            <li>2018 | X from CBSE | 80%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<!-- ---------------------------services------------------------------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>StudyBuddy</h2>
+                <p>Users can seamlessly create study rooms, each equipped with detailed topic descriptions, 
+                    fostering a diverse range of educational discussions. With robust user authentication mechanisms, 
+                    individuals can effortlessly manage their accounts, edit content, and engage with the community. 
+                    Join the journey of knowledge sharing and empowerment today!</p>
+                     <a href="https://github.com/rkrakhikumari/StudyBuddy">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2>Name-card</h2>
+                <p>The Flask Name Card Generator is a web application designed to simplify the process of creating professional-looking name cards. 
+                    With this intuitive tool, users can easily generate custom name cards by simply entering 
+                    their personal information and selecting from various design templates.</p>
+                     <a href="https://github.com/rkrakhikumari/Day_40">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Pomodoro</h2>
+                <p>The Pomodoro Timer is a productivity tool based on the Pomodoro Technique, a time management method developed by Francesco Cirillo.
+                     It aims to enhance focus and productivity by breaking work into intervals, typically 25 minutes in length, separated by short breaks.</p>
+                     <a href="https://github.com/rkrakhikumari/Day_28">Learn more</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<!-- =================================contact============================================================================= -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rkrakhichoudhary@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_rakhi__choudhary_/"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://twitter.com/ChoudharyRakhii"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/rakhi-choudhary-96ab88271/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="resume.pdf" download class="btn ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rakhi Made with <i class="fa-solid fa-heart"></i> by Rakhi Choudhary</p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-tab");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>
